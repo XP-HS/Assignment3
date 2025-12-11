@@ -16,6 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // ==== 添加百度Maven仓库 ====
+        maven {
+            url = uri("https://api.map.baidu.com/repository/maven-public/")
+        }
     }
 }
 

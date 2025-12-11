@@ -47,5 +47,7 @@ dependencies {
     implementation("com.android.volley:volley:1.2.1")
     implementation("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
-
+    implementation("com.baidu.lbsyun:BaiduMapSDK_Map:7.5.9")
+    implementation("com.baidu.lbsyun:BaiduMapSDK_Search:7.5.9")
+    implementation("com.baidu.lbsyun:BaiduMapSDK_Util:7.5.9")
 }
