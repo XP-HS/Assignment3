@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AssignmentThree</string>
+    <string name="google_api_key">Your Google API Key</string>
+    <string name="weather_api_key">Your WeatherAPI Key</string>
+</resources>
