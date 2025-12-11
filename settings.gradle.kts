@@ -11,18 +11,25 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        // ==== 添加百度Maven仓库 ====
+
+        // ==== 百度Maven仓库 ====
         maven {
             url = uri("https://api.map.baidu.com/repository/maven-public/")
+            isAllowInsecureProtocol = true
+        }
+
+        // ==== 新增JitPack仓库（用于Glide） ====
+        maven {
+            url = uri("https://www.jitpack.io")
         }
     }
 }
 
 rootProject.name = "AssignmentThree"
 include(":app")
- 

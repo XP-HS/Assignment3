@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapActivity">
+    android:orientation="vertical"
+    android:background="#f0f0f0">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- 状态显示区域 -->
+    <TextView
+        android:id="@+id/map_status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="地图加载中..."
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:background="#ffffff" />
+
+    <!-- 模拟地图显示区域 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e0e0e0" />
+
+    <!-- 操作按钮区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_simulate_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="模拟定位"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/btn_simulate_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="模拟搜索"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
