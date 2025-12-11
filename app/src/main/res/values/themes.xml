@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme：仅加状态栏颜色，其余全默认 -->
+    <style name="Base.Theme.AssignmentThree" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 仅配置状态栏背景色（绿色），无其他属性 -->
+        <item name="android:statusBarColor">@color/green_main</item>
+        <!-- 可选：确保状态栏文字为白色（避免绿色背景看不清，不影响其他控件） -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+
+</resources>
